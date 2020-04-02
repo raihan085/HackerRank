@@ -1,0 +1,63 @@
+A coin was tossed numerous times. You need to find the longest streak of tosses resulting  and the longest streak of tosses resulting in .
+
+Formally, given the results of  tosses of a coin, find the maximum number of consecutive  and the maximum number of consecutive .
+
+Consider the following example: a coin was tossed  times and the results were . Therefore, the longest  streak was  and the longest  streak was .
+
+Complete the function getMaxStreaks which takes an array of strings toss and returns an array of two integers denoting the maximum streaks of  and  respectively.
+
+Input Format
+
+In the first line, there is a single integer  denoting the number of tosses.
+
+Then,  lines follow. The  of them contains a string  denoting the result of the  toss of the coin.
+
+Constraints
+
+Output Format
+
+In a single line, print two space-separated integers denoting the maximum streak of  and the maximum streak of  respectively.
+
+Sample Input 0
+
+7
+Heads
+Tails
+Tails
+Tails
+Heads
+Heads
+Tails
+Sample Output 0
+
+2 3
+Explanation 0
+
+The longest streak of  is 2 and the longest streak of  is 3.
+
+Sample Input 1
+
+3
+Tails
+Tails
+Tails
+Sample Output 1
+
+0 3
+Explanation 1
+
+The longest streak of  is 0 since there were no such tosses, and the longest streak of  is 3.
+
+Sample Input 2
+
+4
+Heads
+Heads
+Heads
+Heads
+Sample Output 2
+
+4 0
+Explanation 2
+
+The longest streak of  is 4, and the longest streak of  is 0 since there were no such tosses.
